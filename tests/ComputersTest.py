@@ -28,6 +28,7 @@ class ComputersTest(unittest.TestCase):
         home_page.get_btn_search().click()
 
         self.assertIn("http://computer-database.herokuapp.com/computers?f=test", driver.current_url)
+        self.assertIn("ChipTest", driver.find_element_by_xpath('//*[@id="main"]/table/tbody/tr[1]/td[1]').text)
         self.assertIn("Test", driver.find_element_by_xpath('//*[@id="main"]/table/tbody/tr[3]/td[1]').text)
 
     def tearDown(self):
