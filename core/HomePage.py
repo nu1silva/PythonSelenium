@@ -12,15 +12,14 @@ class HomPage(object):
         self.home_page_btn_filter = driver.find_element(By.XPATH, ElementLocator.home_page_btn_filter)
         self.home_page_btn_add = driver.find_element(By.XPATH, ElementLocator.home_page_btn_add)
 
-    def getHomePageTitle(self):
+    def get_btn_add_computer(self):
+        return self.home_page_btn_add
+
+    def get_page_header_title(self):
         return self.home_page_title
 
-    def setSearchText(self, input):
-        self.home_page_txt_search.clear()
-        self.home_page_txt_search.send_keys(input)
+    def get_txt_search(self):
+        return self.home_page_txt_search
 
-    def clickSearchText(self):
-        self.home_page_btn_filter.click()
-
-    def clickAddComputer(self):
-        self.home_page_btn_add.click()
+    def get_btn_search(self):
+        return self.home_page_btn_filter
