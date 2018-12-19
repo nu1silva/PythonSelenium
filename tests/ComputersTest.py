@@ -1,12 +1,10 @@
 import unittest
-import time
 
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.keys import Keys
 
-from core.HomePage import HomPage
-from core.Constants import Constants
+from pages.HomePage import HomPage
+from core.Configurations import Constants
 
 
 class ComputersTest(unittest.TestCase):
