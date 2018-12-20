@@ -9,7 +9,6 @@ class TestBase(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        startTime = datetime.datetime.now()
         print("Execution starting at :" + str(datetime.datetime.now()))
         print("Setting up environment")
         print("------------------------------------------------------------------")

@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from pages.ElementLocator import ElementLocator
+from pages.Locator import ElementLocator
 
 
 class HomPage(object):

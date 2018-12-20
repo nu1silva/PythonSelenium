@@ -3,7 +3,7 @@ import unittest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-from pages.HomePage import HomPage
+from pages.page.HomePage import HomPage
 from core.Configurations import Constants
 
 
