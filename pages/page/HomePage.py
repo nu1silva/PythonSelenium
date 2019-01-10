@@ -4,9 +4,7 @@ from pages.Locator import ElementLocator
 
 class HomPage(object):
 
-    def __init__(self, driver):
-        self.driver = driver
-
+    def __init__(self, driver):        
         self.home_page_title = driver.find_element(By.XPATH, ElementLocator.home_page_title)
         self.home_page_txt_search = driver.find_element(By.XPATH, ElementLocator.home_page_txt_search)
         self.home_page_btn_filter = driver.find_element(By.XPATH, ElementLocator.home_page_btn_filter)
